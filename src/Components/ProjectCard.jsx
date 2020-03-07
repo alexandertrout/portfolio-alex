@@ -1,5 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes }  from 'styled-components';
+import { fadeIn } from 'react-animations';
+ 
+const fadeAnimation = keyframes`${fadeIn}`;
+ 
+const FadeDiv = styled.div`
+  animation: 3s ${fadeAnimation};
+`;
 
 const Card = styled.div`
   justify-self: center;
@@ -13,14 +20,16 @@ const Card = styled.div`
 
 const CardImage = styled.img`
   display: flex;
-  width: 10vw;
+  width: 25vw;
 `
 
 const ProjectCard = (props) => {
   return (
     <Card>
       <h3>{props.name}</h3>
+      <FadeDiv>
       <CardImage src={props.image} alt={props.name}></CardImage>
+      </FadeDiv>
       <p>{props.about}</p>
       <p>{props.link}</p>
       <p>{props.git}</p>

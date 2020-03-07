@@ -1,5 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes }  from 'styled-components';
+import { fadeIn } from 'react-animations';
+ 
+const fadeAnimation = keyframes`${fadeIn}`;
+ 
+const FadeDiv = styled.div`
+  animation: 3s ${fadeAnimation};
+`;
 
 const Card = styled.div`
   justify-self: center;
@@ -21,7 +28,9 @@ const SkillCard = (props) => {
   return (
     <Card>
       <h3>{props.skill}</h3>
+      <FadeDiv>
       <CardImage src={props.image} alt={props.skill}/>
+      </FadeDiv>
       <p>{props.text}</p>
     </Card>
   );
