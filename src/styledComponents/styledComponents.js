@@ -10,7 +10,7 @@ const StyledTop = styled.div`
 `
 
 const OuterContainer = styled.section`
-  padding: 1em 20vw;
+  padding: 1em 10vw;
   color: black;
   font-size: 0.7em;
   text-align: center;

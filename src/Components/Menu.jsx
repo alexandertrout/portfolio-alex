@@ -16,11 +16,18 @@ const LinkIcon = styled.img`
 class Menubar extends Component {
   render() {
     return (
-       <Menu width={ '30%' }>
+       <Menu width={ '20%' }>
         <StyledLink to="/" className="menu-item">
           <div id="home" className="menu-item">
             {/* <LinkIcon src={macbook} alt="mac"/> */}
             Home
+          </div>
+        </StyledLink>
+
+         <StyledLink to="/skills" className="menu-item">
+          <div id="skills" className="menu-item">
+            {/* <LinkIcon src={macbook} alt="mac"/> */}
+            Skills
           </div>
         </StyledLink>
 

@@ -1,3 +1,9 @@
+.leaflet-container {
+  height: 70vh;
+  width: 50vw;
+  border-radius: 3%;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
