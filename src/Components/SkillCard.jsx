@@ -12,6 +12,10 @@ const Card = styled.div`
   justify-self: center;
   height: 20vw;
   width: 15vw;
+   @media only screen and (max-width: 600px) {
+  height: 40vw;
+  width: 40vw;
+}
   color: grey;
   display: flex;
   flex-direction: column;
@@ -20,8 +24,12 @@ const Card = styled.div`
 `
 
 const CardImage = styled.img`
-  display: flex;
+ display: flex;
   width: 10vw;
+ @media only screen and (max-width: 600px) {
+  display: flex;
+  width: 20vw;
+}
 `
 
 const SkillCard = (props) => {
@@ -31,7 +39,7 @@ const SkillCard = (props) => {
       <FadeDiv>
       <CardImage src={props.image} alt={props.skill}/>
       </FadeDiv>
-      <p>{props.text}</p>
+      <p class="skill-text">{props.text}</p>
     </Card>
   );
 };

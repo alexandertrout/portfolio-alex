@@ -49,9 +49,22 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+.about-text {
+  margin: 0vw 20vw;
+  font-size: 14px;
+}
 
-h2 {
+h1 {
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding: 1vw;
+}
+
+.skill-text {
+  font-size: 1vw;
 }
 
 .b {

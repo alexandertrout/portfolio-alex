@@ -38,9 +38,9 @@ class Footer extends Component {
      <img src={github} class="icon" alt="github-icon"/>
      <img src={dev} class="icon" alt="dev-icon"/>
     </OptionContainer>
-    <h2>
+    <h3>
       Looking for work in either Leeds or Manchester, United Kingdom.
-    </h2>
+    </h3>
   </div>
     );
   }

@@ -13,10 +13,11 @@ const LinkIcon = styled.img`
   padding: 0 20px;
 `
 
+
 class Menubar extends Component {
   render() {
     return (
-       <Menu width={ '20%' }>
+       <Menu width={ '40%' } >
         <StyledLink to="/" className="menu-item">
           <div id="home" className="menu-item">
             {/* <LinkIcon src={macbook} alt="mac"/> */}

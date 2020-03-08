@@ -21,12 +21,15 @@ import lambda from "../Images/lambda.png";
 
 import * as utils from "../Components/utils/utils"
 
-
-
 const SkillsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5vw;
+  @media only screen and (max-width: 600px) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5vw;
+}
 `
 
 class About extends Component {

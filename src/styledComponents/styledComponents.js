@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 const StyledTop = styled.div`
-  padding: 10px;
+  padding: 0vw 10vw;
   color: black;
+  background-color: white;
   font-size: 1.2em;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: sticky;
+  top: 0;
 `
 
 const OuterContainer = styled.section`
