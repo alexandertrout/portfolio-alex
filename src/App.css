@@ -52,8 +52,12 @@
 .about-text {
   margin: 0vw 20vw;
   font-size: 14px;
-   @media only screen and (max-width: 600px) {
-  margin: 3vw;
+}
+
+ @media only screen and (max-width: 600px) {
+   .about-text {
+  margin: 0vw 4vw;
+  font-size: 14px;
 }
 }
 
