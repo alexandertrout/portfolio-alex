@@ -48,3 +48,30 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+
+h2 {
+  text-align: center;
+}
+
+.b {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.b:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.icon {
+  height: 1.5vw;
+  width: 1.5vw;
+  margin: 0.5vw;
+  opacity: 1;
+  transition: 0.2s;
+}
+.icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
