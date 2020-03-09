@@ -17,7 +17,8 @@ const TopTitle = styled.div`
   font-size: 30px;
   margin: 2vw 0vw;
     @media only screen and (max-width: 600px) {
-  margin: 5vw 0vw;
+  line-height: 60px;
+  margin: 6vw 0vw;
 }
   font-display: bold;
   color: black;
