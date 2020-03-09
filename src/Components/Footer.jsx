@@ -58,10 +58,10 @@ class Footer extends Component {
       <Option to="/contact" className="menu-item" ><div class="b">CONTACT</div></Option>
     </OptionContainer>
     <IconContainer>
-     <img src={facebook} class="icon" alt="facebook-icon"/>
-     <img src={instagram} class="icon" alt="instagram-icon"/>
-     <img src={github} class="icon" alt="github-icon"/>
-     <img src={dev} class="icon" alt="dev-icon"/>
+            <a href="https://github.com/alexandertrout"><img src={github} class="icon" alt="github-icon" /></a>
+            <a href="https://dev.to/alexandertrout"> <img src={dev} class="icon" alt="dev-icon" /></a>
+            <a href="https://www.instagram.com/alexandertrout/?hl=en"><img src={instagram} class="icon" alt="instagram-icon" /></a>
+            <a href="https://www.facebook.com/alex.trout.988?ref=bookmarks"><img src={facebook} class="icon" alt="facebook-icon" /></a>
     </IconContainer>
   </div>
       <h3>
