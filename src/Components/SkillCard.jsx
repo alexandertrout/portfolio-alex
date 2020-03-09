@@ -13,7 +13,7 @@ const Card = styled.div`
   height: 20vw;
   width: 15vw;
    @media only screen and (max-width: 600px) {
-  height: 40vw;
+height: 70vw;
   width: 40vw;
 }
   color: grey;

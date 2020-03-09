@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Menubar from "./Menu"
 import { Map, Marker, TileLayer, Popup } from "react-leaflet";
-import {StyledTop} from "../styledComponents/styledComponents";
+import {StyledTop, TopTitle} from "../styledComponents/styledComponents";
 import styled, { keyframes }  from 'styled-components';
 import { fadeIn } from 'react-animations';
 
@@ -12,6 +12,16 @@ const MapOuterContainer = styled.section`
   text-align: left;
   display: grid;
   grid-template-columns: 5fr 1.5fr ;
+  @media only screen and (max-width: 600px) {
+  padding: 1em 5vw;
+  color: black;
+  font-size: 0.7em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: middle;
+  }
 `
  
 const fadeAnimation = keyframes`${fadeIn}`;
@@ -23,15 +33,25 @@ const MapFadeDiv = styled.div`
   justify-content: center;
 `;
 
-
+const ContactInfo = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+     @media only screen and (max-width: 600px) {
+  height: 50vw;
+     }  
+`
 
 class Contact extends Component {
   render() {
     return (
       <div>
-          <Menubar/>
+        <Menubar/>
         <StyledTop>
-          <h1>CONTACT</h1>
+          <TopTitle>CONTACT</TopTitle>
         </StyledTop>
         <MapOuterContainer>
         <MapFadeDiv>
@@ -43,11 +63,11 @@ class Contact extends Component {
                 </Marker>
               </Map>
         </MapFadeDiv>
-        <p>
-          Phone: 07516158756 <br></br>
-          Email: alexandertrout96@gmail.com <br></br>
-          Please find links to my socials below!
-        </p>
+        <ContactInfo>
+            <div> Phone: 07516158756 </div>
+            <div>Email: alexandertrout96@gmail.com</div>
+            <div>Please find links to my socials below!</div>
+        </ContactInfo>
         </MapOuterContainer>
       </div>
 

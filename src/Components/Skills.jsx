@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Menubar from "./Menu";
 import SkillCard from "./SkillCard";
 import styled from 'styled-components';
-import { StyledTop, OuterContainer } from "../styledComponents/styledComponents"
+import { StyledTop, OuterContainer, TopTitle} from "../styledComponents/styledComponents"
 // skills icons
 import javascript from "../Images/javascript.png";
 import nodejs from "../Images/node-js.png";
@@ -117,7 +117,7 @@ class About extends Component {
       <div>
           <Menubar/>
         <StyledTop>
-          <h1>SKILLS</h1>
+          <TopTitle>SKILLS</TopTitle>
         </StyledTop>
         <OuterContainer>
           <SkillsContainer>

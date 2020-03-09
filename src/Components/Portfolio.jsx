@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Menubar from "./Menu"
 import styled from 'styled-components';
 import ProjectCard from "./ProjectCard";
-import {StyledTop, OuterContainer } from "../styledComponents/styledComponents";
+import {StyledTop, OuterContainer, TopTitle } from "../styledComponents/styledComponents";
 // portfolio pics
 import feNcNews from "../Images/feNcNews.png";
 import beNcNews from "../Images/be-nc-news.png";
@@ -13,9 +13,10 @@ import comingSoon from "../Images/comingSoon.png";
 import moments from "../Images/Moments.png";
 
 const ProjectsContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  align-items: center;
 `
 
 class Portfolio extends Component {
@@ -82,13 +83,13 @@ class Portfolio extends Component {
       <div>
           <Menubar/>
         <StyledTop>
-          <h1>PORTFOLIO</h1>
+          <TopTitle>PORTFOLIO</TopTitle>
         </StyledTop>
         <OuterContainer>
           <ProjectsContainer>
           {this.state.portfolio.map(project=> {
             return (
-              <ProjectCard name={project.name} image={project.picture} about={project.GitHub} link={project.link} git={project.description}/>
+              <ProjectCard name={project.name} image={project.picture} git={project.GitHub} link={project.link} about={project.description}/>
               )
             })}
           </ProjectsContainer>

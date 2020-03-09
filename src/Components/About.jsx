@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Menubar from "./Menu";
-import { StyledTop, OuterContainer } from "../styledComponents/styledComponents"
+import { StyledTop, OuterContainer, TopTitle } from "../styledComponents/styledComponents"
 
 class About extends Component {
  state = {
@@ -11,11 +11,12 @@ class About extends Component {
       <div>
         <Menubar/>
         <StyledTop>
-          <h1>ABOUT</h1>
+          <TopTitle>ABOUT</TopTitle>
         </StyledTop>
         <OuterContainer>
           <h1>Coding Experience</h1>
-          <p class="about-text">Recently Graduated 12 week software developer bootcamp designed to provide me with the necessary skills to start work as a junior developer. Learning to program in JavaScript, it covers test-driven development, pair programming, object-oriented programming, and both front and back end development. I am experienced dealing with asynchronous programming, using APIs and databases, Express, SQL, and React using styled components. Due to graduate early March 2020 Ill be looking for positions immediately.</p>
+          <h3>Northcoders</h3>
+          <p class="about-text">Recently Graduated 12 week software developer bootcamp designed to provide me with the necessary skills to start work as a junior developer. Learning to program in JavaScript, the course covered test-driven development, pair programming, object-oriented programming, and both front and back end development. I am experienced dealing with asynchronous programming, using APIs and databases, Express, SQL, and React using styled components. In my final project I gained experience with react native for designing cross-platform native apps as well as implemeting the AWS services Cognito, Amplify, S3 Storage, DynamoDB, and using Lambdas with triggers. Graduated early March 2020 I am looking for positions starting immediately.</p>
           <h1>Previous Experience</h1>
           <h3>Manchester Metropolitan University</h3>
           <p class="about-text">I graduated from Manchester metropolitan university in June 2019 with a first in Environmental Science. My key interests included; data analysis and statistics, applied GIS and remote sensing and sustainable production methods. I can confidently use statistics packages such as SPSS and a range of GIS programs including ArcGIS, QGIS, IDRISI and ERDAS Imagine. I have gained experience working with pollution data covering airborne pollutants, land contamination and water quality. My dissertation was on how climactic factors can influence air quality in cities.</p>
