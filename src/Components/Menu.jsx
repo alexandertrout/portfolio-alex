@@ -34,7 +34,7 @@ class Menubar extends Component {
 
         <StyledLink to="/portfolio" className="menu-item">
           <div id="portfolio" className="menu-item">
-            <LinkIcon src={macbook} alt="mac"/>
+            {/* <LinkIcon src={macbook} alt="mac"/> */}
             Portfolio
           </div>
         </StyledLink>

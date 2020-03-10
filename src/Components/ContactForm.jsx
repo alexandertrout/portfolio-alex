@@ -1,8 +1,26 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const StrikedText = styled.h3`
+margin: 0;
+padding: 0;
+  text-decoration: line-through;
+  color: grey;
+  @media only screen and (max-width: 600px) {
+  font-size: 14px;
+  }
+`
+const Container = styled.div`
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 10px;
+`
+
 const FormContainer = styled.form`
-  margin: 5vw 25vw;
+  margin: 2vw 25vw;
   width: 50vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -64,6 +82,10 @@ class ContactForm extends Component {
     console.log(this.state)
     return (
       <div>
+        <Container>
+        <StrikedText>PLEASE ENTER A MESSAGE USING THE FORM BELOW TO CONTACT ME</StrikedText>
+        <p>This backend to make this form functional is currently under construction </p>
+        </Container>
         <FormContainer onSubmit={this.handleSubmit}>
           <NameInput type="text" placeholder="Name" id="name" value={this.state.name} onChange={this.handleChange}/>
           <NumberInput type="text" placeholder="Contact Number" id="number" value={this.state.number} onChange={this.handleChange} />       

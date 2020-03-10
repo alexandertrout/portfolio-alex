@@ -34,16 +34,28 @@ const MapFadeDiv = styled.div`
   justify-content: center;
 `;
 
+const Styledh = styled.h3`
+  font-size: 3vw;
+  padding: 10px 10px;
+  margin: 0;
+`
+
+const StyledDiv = styled.div`
+  font-size: 1.5vw;
+  padding: 5px 10px;
+  margin: 0;
+`
+
 const ContactInfo = styled.div`
     padding: 5vw 1vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     font-size: 25px;
     text-align: center;
      @media only screen and (max-width: 600px) {
-  height: 50vw;
+     height: 30vw;
      }  
 `
 
@@ -55,9 +67,11 @@ class Contact extends Component {
         <StyledTop>
           <TopTitle>CONTACT</TopTitle>
         </StyledTop>
+
+
         <MapOuterContainer>
         <MapFadeDiv>
-          <Map center={["53.521361", "-1.13241"]} zoom={6}>
+          <Map center={["53.521361", "-1.13241"]} zoom={5}>
                 <TileLayer url="https://api.mapbox.com/styles/v1/alexandertrout/ck67r24b90aoe1iomt2f9v8n5/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWxleGFuZGVydHJvdXQiLCJhIjoiY2s2NndtcHFjMDJkZzNqbXFmN2Q1bzgyayJ9.zFETMUE1SAKmZy0Zje6a7g" />
                 <Marker position={["53.521361", "-1.13241"]}>
                   <Popup>Current Location: Doncaster</Popup>
@@ -65,13 +79,17 @@ class Contact extends Component {
               </Map>
         </MapFadeDiv>
         <ContactInfo>
-            <div> Phone: 07516158756 </div>
-            <div>Email: alexandertrout96@gmail.com</div>
-            <div>Please find links to my socials below</div>
-            <div>Enter your details into the form below if you'd like me to get in touch</div>
+            <Styledh>PHONE</Styledh>
+            <StyledDiv>07516158756</StyledDiv>
+            <Styledh>EMAIL</Styledh>
+            <StyledDiv>alexandertrout96@gmail.com</StyledDiv>
         </ContactInfo>
         </MapOuterContainer>
+
+
         <ContactForm/>
+
+
       </div>
 
     );
