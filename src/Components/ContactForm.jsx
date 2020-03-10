@@ -10,6 +10,15 @@ padding: 0;
   font-size: 14px;
   }
 `
+const OtherText = styled.h3`
+margin: 0;
+padding: 0;
+
+  @media only screen and (max-width: 600px) {
+  font-size: 14px;
+  }
+`
+
 const Container = styled.div`
   margin: 30px;
   display: flex;

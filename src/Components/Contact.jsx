@@ -38,12 +38,18 @@ const Styledh = styled.h3`
   font-size: 3vw;
   padding: 10px 10px;
   margin: 0;
+    @media only screen and (max-width: 600px) {
+  font-size: 20px;
+  }
 `
 
 const StyledDiv = styled.div`
   font-size: 1.5vw;
   padding: 5px 10px;
   margin: 0;
+    @media only screen and (max-width: 600px) {
+  font-size: 14px;
+  }
 `
 
 const ContactInfo = styled.div`
