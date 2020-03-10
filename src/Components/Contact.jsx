@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menubar from "./Menu"
+import ContactForm from "./ContactForm";
 import { Map, Marker, TileLayer, Popup } from "react-leaflet";
 import {StyledTop, TopTitle} from "../styledComponents/styledComponents";
 import styled, { keyframes }  from 'styled-components';
@@ -34,6 +35,7 @@ const MapFadeDiv = styled.div`
 `;
 
 const ContactInfo = styled.div`
+    padding: 5vw 1vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -66,9 +68,11 @@ class Contact extends Component {
         <ContactInfo>
             <div> Phone: 07516158756 </div>
             <div>Email: alexandertrout96@gmail.com</div>
-            <div>Please find links to my socials below!</div>
+            <div>Please find links to my socials below</div>
+            <div>Enter your details into the form below if you'd like me to get in touch</div>
         </ContactInfo>
         </MapOuterContainer>
+        <ContactForm/>
       </div>
 
     );

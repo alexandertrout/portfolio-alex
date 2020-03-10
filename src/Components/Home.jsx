@@ -5,11 +5,16 @@ import styled from 'styled-components';
 import alex from "../Images/alex.jpeg";
 
 const HomeTitle = styled.p`
-  margin: 2vw 50vw 0vw 0vw;
-  color: black;
-  font-size: 3vw;
-  background-color: white;
-  padding: 20px;
+@font-face {
+  font-family: prox;
+  src: url(./proximanova-bold.otf);
+  font-weight: normal;
+}
+  font-family: prox;
+  margin: 2vw 0vw 0vw 0vw;
+  color: white;
+  font-size: 4vw;
+  padding: 20px 20px 5px 20px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
  @media only screen and (max-width: 600px) {
@@ -18,10 +23,15 @@ const HomeTitle = styled.p`
  }
 `
 const HomeText = styled.p`
-  margin: 0vw 50vw 2vw 0vw;
-  color: black;
+@font-face {
+  font-family: prox;
+  src: url(./proximanova-bold.otf);
+  font-weight: normal;
+}
+  font-family: prox;
+  margin: 0vw 50vw 4vw 0vw;
+  color: white;
   font-size: 1.5vw;
-  background-color: white;
   padding: 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;

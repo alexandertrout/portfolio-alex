@@ -14,7 +14,13 @@ const StyledTop = styled.div`
 `
 
 const TopTitle = styled.div`
+@font-face {
+  font-family: prox;
+  src: url(./proximanova-bold.otf);
+  font-weight: normal;
+}
   font-size: 30px;
+  font-family: prox;
   margin: 2vw 0vw;
     @media only screen and (max-width: 600px) {
   line-height: 60px;

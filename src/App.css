@@ -1,3 +1,9 @@
+@font-face {
+  font-family: prox;
+  src: url(./proximanova-bold.otf);
+  font-weight: normal;
+}
+
 .leaflet-container {
   height: 70vh;
   width: 50vw;
