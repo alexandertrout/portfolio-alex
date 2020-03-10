@@ -10,14 +10,6 @@ padding: 0;
   font-size: 14px;
   }
 `
-const OtherText = styled.h3`
-margin: 0;
-padding: 0;
-
-  @media only screen and (max-width: 600px) {
-  font-size: 14px;
-  }
-`
 
 const Container = styled.div`
   margin: 30px;
@@ -35,7 +27,12 @@ const FormContainer = styled.form`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
   grid-gap: 10px;
+  @media only screen and (max-width: 600px) {
+  margin: 2vw 10vw;
+  width: 80vw;
+  }
 `
+
 const NameInput = styled.input`
   grid-column: 1/2;
   grid-row: 1/2;
