@@ -43,6 +43,16 @@ const IconContainer = styled.div`
   }
 `
 
+const Styledh3 = styled.h3`
+  font-size: 1.5vw;
+  padding: 50px 10px;
+  margin: 0;
+    @media only screen and (max-width: 600px) {
+  font-size: 14px;
+  }
+`
+  
+
 
 
 class Footer extends Component {
@@ -64,9 +74,9 @@ class Footer extends Component {
             <a href="https://www.facebook.com/alex.trout.988?ref=bookmarks"><img src={facebook} class="icon" alt="facebook-icon" /></a>
     </IconContainer>
   </div>
-      <h3>
+      <Styledh3>
         Looking for work in either Leeds or Manchester, United Kingdom.
-    </h3>
+    </Styledh3>
     </>
     );
   }

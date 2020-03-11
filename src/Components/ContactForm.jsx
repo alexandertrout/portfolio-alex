@@ -23,6 +23,7 @@ const Container = styled.div`
 const FormContainer = styled.form`
   margin: 2vw 25vw;
   width: 50vw;
+  height: 40vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
@@ -51,6 +52,7 @@ const EmailInput = styled.input`
   padding: 4px;
   border-color: black;
 `
+
 const MessageInput = styled.input`
   grid-column: 1/4;
   grid-row: 4/5;
@@ -81,7 +83,8 @@ class ContactForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
     const {name, email, number, message} = this.state;
-    const data = {name, number, email, message};
+    if (name !== "" && email !== "" && number!== "" && message !== ""){
+      const data = {name, number, email, message};
       axios.post(`https://portfolio-backend-alex.herokuapp.com/api/mail`, data)
            .then(response => {
               console.log(response);
@@ -90,6 +93,9 @@ class ContactForm extends Component {
               console.log(error);
               this.setState({name: "", number: "", email: "", message: "There was an error sending your message"})
             });
+    } else {
+      alert("Please fill in all form fields before attempting to send me a message!");
+    }
   }
 
   render() {
