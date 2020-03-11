@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import axios from "axios";
 
-const StrikedText = styled.h3`
+const SomeText = styled.h3`
 margin: 0;
 padding: 0;
-  text-decoration: line-through;
   color: grey;
   @media only screen and (max-width: 600px) {
   font-size: 14px;
@@ -80,8 +80,16 @@ class ContactForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.setState({name: "", number: "", email: "", message: ""})
-    console.log("SUBMIT!");
+    const {name, email, number, message} = this.state;
+    const data = {name, number, email, message};
+      axios.post(`https://portfolio-backend-alex.herokuapp.com/api/mail`, data)
+           .then(response => {
+              console.log(response);
+              this.setState({name: "", number: "", email: "", message: ""})
+            }).catch(error => {
+              console.log(error);
+              this.setState({name: "", number: "", email: "", message: "There was an error sending your message"})
+            });
   }
 
   render() {
@@ -89,8 +97,7 @@ class ContactForm extends Component {
     return (
       <div>
         <Container>
-        <StrikedText>PLEASE ENTER A MESSAGE USING THE FORM BELOW TO CONTACT ME</StrikedText>
-        <p>This backend to make this form functional is currently under construction </p>
+        <SomeText>PLEASE ENTER A MESSAGE USING THE FORM BELOW TO CONTACT ME</SomeText>
         </Container>
         <FormContainer onSubmit={this.handleSubmit}>
           <NameInput type="text" placeholder="Name" id="name" value={this.state.name} onChange={this.handleChange}/>
