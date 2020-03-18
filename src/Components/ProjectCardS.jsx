@@ -9,7 +9,7 @@ const Card = styled.section`
   position: relative;
         @media only screen and (max-width: 600px) {
   width: 100vw;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
