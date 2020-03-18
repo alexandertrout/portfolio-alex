@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ProjectCardS from "./ProjectCardS";
 import {StyledTop, TopTitle } from "../styledComponents/styledComponents";
 // portfolio pics
-import feNcNews from "../Images/feNCNews.png";
+import feNcNews from "../Images/feNcNews.png";
 import beNcNews from "../Images/be-nc-news.png";
 import SongGame from "../Images/SongGame.png";
 import moments from "../Images/Moments.png";

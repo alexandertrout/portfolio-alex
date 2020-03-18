@@ -152,7 +152,7 @@ const ProjectCardS = (props) => {
          </SkillsUsed>
          <ButtonContainer>
             <ExampleButton><a href={props.link}>See it!</a></ExampleButton>
-            <GitHubButton><a href={props.git}>GitHub Rep</a></GitHubButton>
+            <GitHubButton><a href={props.git}>GitHub Repo</a></GitHubButton>
          </ButtonContainer>
         </CardInfo>
       </CardInfoContainer>
