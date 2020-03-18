@@ -25,7 +25,7 @@ const CardImage = styled.img`
   bottom:0;
   z-index: 2;
         @media only screen and (max-width: 600px) {
-  width: 50vw;
+  width: 60vw;
   position: relative;
 }
 `
@@ -44,7 +44,7 @@ const CardInfoContainer = styled.section`
   z-index: 1;
         @media only screen and (max-width: 600px) {
   width: 100vw;
-  height: 35vh;
+  height: 50vh;
   position: relative;
   background-color: white;
   color: black;
@@ -59,7 +59,7 @@ const CardInfo = styled.div`
   height:30vw;
         @media only screen and (max-width: 600px) {
   width: 100vw;
-  height: 25vh;
+  height: 45vh;
   position: relative;
   text-align: center;
 }
