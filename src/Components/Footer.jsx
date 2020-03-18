@@ -52,9 +52,6 @@ const Styledh3 = styled.h3`
   }
 `
   
-
-
-
 class Footer extends Component {
   render() {
     return (

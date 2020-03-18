@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
+
+const leftAnimation = keyframes`${fadeInLeft}`;
+const rightAnimation = keyframes`${fadeInRight}`;
 
 const StyledTop = styled.div`
   padding: 0vw 10vw;
@@ -37,4 +41,4 @@ const OuterContainer = styled.section`
   text-align: center;
 `
 
-export { StyledTop, OuterContainer, TopTitle }
+export { StyledTop, OuterContainer, TopTitle, leftAnimation, rightAnimation }

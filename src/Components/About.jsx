@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import Menubar from "./Menu";
-import { StyledTop, OuterContainer, TopTitle } from "../styledComponents/styledComponents"
-import styled, { keyframes }  from 'styled-components';
-import { fadeIn, fadeInLeft, fadeInRight } from 'react-animations';
-
-const leftAnimation = keyframes`${fadeInLeft}`;
-const rightAnimation = keyframes`${fadeInRight}`;
+import { StyledTop, TopTitle, leftAnimation, rightAnimation } from "../styledComponents/styledComponents"
+import styled from 'styled-components';
 
 const OuterContainerAbout = styled.section`
   padding: 30px 10vw;

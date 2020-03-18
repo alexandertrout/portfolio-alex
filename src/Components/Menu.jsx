@@ -2,15 +2,10 @@ import React, { Component } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from "@reach/router";
 import styled from 'styled-components';
-import macbook from "../Images/macbook.png";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
-`
-const LinkIcon = styled.img`
-  height: 20px;
-  padding: 0 20px;
 `
 
 
