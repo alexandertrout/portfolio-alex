@@ -8,6 +8,7 @@ import feNcNews from "../Images/feNcNews.png";
 import beNcNews from "../Images/be-nc-news.png";
 import SongGame from "../Images/SongGame.png";
 import moments from "../Images/Moments.png";
+import astrid from "../Images/Astrid.png";
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -20,6 +21,15 @@ const ProjectsContainer = styled.div`
 class Portfolio extends Component {
     state = {
     portfolio: [
+        {
+          picture: astrid,
+          name: "Astrid Media - React",
+          link: "https://astridmedia.netlify.com/ ",
+          GitHub: "https://github.com/alexandertrout/astrid",
+          description:
+            "Working for a small start up to help them develop a dynamic online presence, I offered to do this voluntarily through linkedIn to gain experience working with businnesses. (Currently Desktop Only).",
+          skillsUsed: ["React Native", "Styled-Components", "Node.js", "Express"]
+        },
       {
         picture: moments,
         name: "Moments - React Native",
