@@ -84,7 +84,7 @@ class ContactForm extends Component {
     event.preventDefault();
     const {name, email, number, message} = this.state;
     if (name !== "" && email !== "" && number!== "" && message !== ""){
-      const data = {name, number, email, message};
+      const data = {name, number, email, message, from: 'alex-portfolio'};
       axios.post(`https://portfolio-backend-alex.herokuapp.com/api/mail`, data)
            .then(response => {
               console.log(response);
