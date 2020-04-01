@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Menubar from "./Menu"
 import styled from 'styled-components';
-import ProjectCardS from "./ProjectCardS";
+import ProjectCardS from "./ProjectCardX";
 import {StyledTop, TopTitle } from "../styledComponents/styledComponents";
 // portfolio pics
 import feNcNews from "../Images/feNcNews.png";
@@ -23,7 +23,7 @@ class Portfolio extends Component {
     portfolio: [
         {
           picture: astrid,
-          name: "Astrid Media - React",
+          name: "Astrid Media - React.js",
           link: "https://astridmedia.netlify.com/ ",
           GitHub: "https://github.com/alexandertrout/astrid",
           description:
@@ -41,7 +41,7 @@ class Portfolio extends Component {
       },
       {
         picture: feNcNews,
-        name: "News Website Front End (React)",
+        name: "News Website Front End - React.js",
         link: "https://alex-trout-nc-news.netlify.com/",
         GitHub: "https://github.com/alexandertrout/fe-nc-news",
         description:
@@ -50,7 +50,7 @@ class Portfolio extends Component {
       },
       {
         picture: beNcNews,
-        name: "News Website Backend Server",
+        name: "News Website Backend Server - Node.js",
         link: "https://alex-be-nc-news.herokuapp.com/api",
         GitHub: "https://github.com/alexandertrout/alex-be-nc-news",
         description: `A Server built using express.js, postgreSQL and knex, contacted by the front end app of Nc News. RESTful endpoints avaliable are detailed in the README for this repo on my GitHub.`,
@@ -58,7 +58,7 @@ class Portfolio extends Component {
       },
       {
         picture: SongGame,
-        name: "Song Guessing Game",
+        name: "Song Guessing Game - Node.js",
         link: "https://pickthefakesong.herokuapp.com/",
         GitHub: "https://github.com/alexandertrout/songgame",
         description:
