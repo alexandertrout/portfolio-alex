@@ -6,7 +6,7 @@ const SomeText = styled.h3`
 margin: 0;
 padding: 0;
   color: grey;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
   font-size: 14px;
   }
 `
@@ -28,7 +28,7 @@ const FormContainer = styled.form`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
   grid-gap: 10px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
   margin: 2vw 10vw;
   width: 80vw;
   }

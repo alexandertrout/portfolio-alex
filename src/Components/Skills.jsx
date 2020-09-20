@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Menubar from "./Menu";
 import SkillCard from "./SkillCard";
 import styled from 'styled-components';
 import { StyledTop, OuterContainer, TopTitle} from "../styledComponents/styledComponents"
@@ -115,7 +114,6 @@ class About extends Component {
   render() {
     return (
       <div>
-          <Menubar/>
         <StyledTop>
           <TopTitle>SKILLS</TopTitle>
         </StyledTop>

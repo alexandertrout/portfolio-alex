@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Menubar from "./Menu"
 import { StyledTop, TopTitle } from "../styledComponents/styledComponents";
+import MenuBar from "../Components/Menu";
 import styled from 'styled-components';
 import alex from "../Images/alex.jpeg";
 
@@ -17,7 +17,7 @@ const HomeTitle = styled.p`
   padding: 20px 20px 5px 20px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 800px) {
    font-size: 5vw;
   margin: 2vw 20vw 0vw 0vw;
  }
@@ -35,7 +35,7 @@ const HomeText = styled.p`
   padding: 20px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 800px) {
      font-size: 2.5vw;
   margin: 0vw 20vw 0vw 0vw;
  }
@@ -58,13 +58,13 @@ class Home extends Component {
   render() {
     return (
       <main>
-        <Menubar/>
         <StyledTop>
           <TopTitle>HOME</TopTitle>
         </StyledTop>
+        <MenuBar/>
         <OuterContainerHome>
-          <HomeTitle> Alexander Trout Developer Portfolio </HomeTitle>
-          <HomeText> Welcome to my onlie portfolio for all things code related, I'm a recent Northcoders bootcamp graduate looking for employment as a Junior Dev. Please take a look at some of my projects and the skills I've picked up from working on them, if you like what you see don't hesitate to get in touch as I am avaliable to start working from the beginning of March 2020.</HomeText>
+          <HomeTitle> Alex Trout </HomeTitle>
+          <HomeText> Software Developer & <br></br> Environmental Science Graduate </HomeText>
         </OuterContainerHome>
       </main>
 

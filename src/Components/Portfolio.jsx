@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Menubar from "./Menu"
+import MenuBar from "../Components/Menu";
 import styled from 'styled-components';
 import ProjectCardS from "./ProjectCardX";
 import {StyledTop, TopTitle } from "../styledComponents/styledComponents";
@@ -70,11 +70,10 @@ class Portfolio extends Component {
   render() {
     return (
       <div>
-          <Menubar/>
         <StyledTop>
           <TopTitle>PORTFOLIO</TopTitle>
         </StyledTop>
-
+        <MenuBar/>
           <ProjectsContainer>
           {this.state.portfolio.map(project=> {
             return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Menubar from "./Menu";
 import { StyledTop, TopTitle, leftAnimation, rightAnimation } from "../styledComponents/styledComponents"
+import MenuBar from "../Components/Menu";
 import styled from 'styled-components';
 
 const OuterContainerAbout = styled.section`
@@ -8,7 +8,7 @@ const OuterContainerAbout = styled.section`
   background-color: #313131;
   color: whitesmoke;
   font-weight: bold;
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 800px) {
   padding: 0;
   }
 `
@@ -19,7 +19,7 @@ const ExperienceDiv = styled.div`
  grid-template-columns: 0.8fr 2fr;
  text-align: left;
  background-color: #313131;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
   grid-template-columns: 1fr;
   padding: 0;
   margin: 0;
@@ -32,7 +32,7 @@ const ExperienceTitle = styled.h3`
   margin: 10px 0px;
   font-size: 22;
   animation: 3s ${leftAnimation};
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 800px) {
   padding: 20px 15px;
   margin: 0;
   }
@@ -44,7 +44,7 @@ const ExperienceText = styled.p`
   text-align: left;
   font-size: 14;
   animation: 3s ${rightAnimation};
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 800px) {
    padding: 10px 15px;
    margin: 0;
    font-size: 14px;
@@ -58,10 +58,10 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Menubar/>
         <StyledTop>
           <TopTitle>ABOUT</TopTitle>
         </StyledTop>
+        <MenuBar/>
         <OuterContainerAbout>
           <ExperienceDiv>
             <ExperienceTitle>Slingshot Simulations</ExperienceTitle>

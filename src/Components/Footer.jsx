@@ -10,6 +10,9 @@ const Option = styled(Link)`
   text-align: center;
   text-decoration: none;
   color: black;
+  @media only screen and (max-width: 800px) {
+  text-align: right;
+  }
 `
 
 const OptionContainer = styled.div`
@@ -18,11 +21,11 @@ const OptionContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   font-size: 1.2vw;
-  @media only screen and (max-width: 600px) {
-  height: 80vw;
+  @media only screen and (max-width: 800px) {
+  height: 30vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
   font-size: 4vw;
   }
@@ -34,7 +37,7 @@ const IconContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   font-size: 1.2vw;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
   height: 20vw;
   display: flex;
   align-items: center;
@@ -47,7 +50,7 @@ const Styledh3 = styled.h3`
   font-size: 1.5vw;
   padding: 50px 10px;
   margin: 0;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
   font-size: 14px;
   }
 `
@@ -58,7 +61,7 @@ class Footer extends Component {
       <>
       <div>
     <OptionContainer>
-      <Option to="/home" className="menu-item" ><div class="b">HOME</div></Option>
+      <Option to="/" className="menu-item" ><div class="b">HOME</div></Option>
       <Option to="/skills" className="menu-item" ><div class="b">SKILLS</div></Option>
       <Option to="/portfolio" className="menu-item" ><div class="b">PORTFOLIO</div></Option>
       <Option to="/about" className="menu-item" > <div class="b">ABOUT</div></Option>

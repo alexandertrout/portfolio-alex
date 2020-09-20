@@ -25,14 +25,14 @@ const CardImage = styled.img`
 `
 const CardTitle = styled.h2`
   font-size: 2vw;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 800px) {
   font-size: 24px;
 }
 `
 
 const CardText = styled.p`
   font-size: 1vw;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 800px) {
   font-size: 14px;
 }
 `

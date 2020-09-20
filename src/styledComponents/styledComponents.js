@@ -25,11 +25,7 @@ const TopTitle = styled.div`
 }
   font-size: 30px;
   font-family: prox;
-  margin: 2vw 0vw;
-    @media only screen and (max-width: 600px) {
-  line-height: 60px;
-  margin: 6vw 0vw;
-}
+  margin: 1vw 0vw;
   font-display: bold;
   color: black;
 `

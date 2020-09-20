@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Menubar from "./Menu"
+import MenuBar from "../Components/Menu";
 import ContactForm from "./ContactForm";
 import { Map, Marker, TileLayer, Popup } from "react-leaflet";
 import {StyledTop, TopTitle} from "../styledComponents/styledComponents";
@@ -13,7 +13,7 @@ const MapOuterContainer = styled.section`
   text-align: left;
   display: grid;
   grid-template-columns: 5fr 1.5fr ;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
   padding: 1em 5vw;
   color: black;
   font-size: 0.7em;
@@ -38,7 +38,7 @@ const Styledh = styled.h3`
   font-size: 3vw;
   padding: 10px 10px;
   margin: 0;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
   font-size: 20px;
   }
 `
@@ -47,7 +47,7 @@ const StyledDiv = styled.div`
   font-size: 1.5vw;
   padding: 5px 10px;
   margin: 0;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
   font-size: 14px;
   }
 `
@@ -60,7 +60,7 @@ const ContactInfo = styled.div`
     align-items: center;
     font-size: 25px;
     text-align: center;
-     @media only screen and (max-width: 600px) {
+     @media only screen and (max-width: 800px) {
      height: 30vw;
      }  
 `
@@ -69,12 +69,10 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <Menubar/>
         <StyledTop>
           <TopTitle>CONTACT</TopTitle>
         </StyledTop>
-
-
+        <MenuBar/>
         <MapOuterContainer>
         <MapFadeDiv>
           <Map center={["53.521361", "-1.13241"]} zoom={5}>

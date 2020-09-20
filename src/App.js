@@ -18,11 +18,11 @@ class App extends React.Component {
     return (
       <>
       <Router>
-      <Home path="/" />
-      <Portfolio path="/portfolio" />
-      <About path="/about" />
-      <Skills path="/skills" />
-      <Contact path="/contact" />
+        <Home path="/" />
+        <Portfolio path="/portfolio" />
+        <About path="/about" />
+        <Skills path="/skills" />
+        <Contact path="/contact" />
       </Router>
       <Footer/>
       </>
