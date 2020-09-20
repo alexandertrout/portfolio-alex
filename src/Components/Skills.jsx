@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MenuBar from "../Components/Menu";
 import SkillCard from "./SkillCard";
 import styled from 'styled-components';
 import { StyledTop, OuterContainer, TopTitle} from "../styledComponents/styledComponents"
@@ -117,6 +118,7 @@ class About extends Component {
         <StyledTop>
           <TopTitle>SKILLS</TopTitle>
         </StyledTop>
+        <MenuBar/>
         <OuterContainer>
           <SkillsContainer>
           {this.state.skills.map(skill => {
