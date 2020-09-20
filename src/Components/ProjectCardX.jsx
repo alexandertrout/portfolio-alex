@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { leftAnimation, rightAnimation } from "../styledComponents/styledComponents";
 import styled from 'styled-components';
 import mac from '../Images/mac.jpg';
 
