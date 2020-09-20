@@ -27,7 +27,7 @@ class Portfolio extends Component {
           link: "https://astridmedia.netlify.com/ ",
           GitHub: "https://github.com/alexandertrout/astrid",
           description:
-            "Working for a small start up to help them develop a dynamic online presence, I offered to do this voluntarily through linkedIn to gain experience working with businnesses. (Currently Desktop Only).",
+            "Working with a small start up to help them develop ideas for their online presence, I offered to do this voluntarily through linkedIn to gain experience working with businnesses. (Currently Desktop Only).",
           skillsUsed: ["React Native", "Styled-Components", "Node.js", "Express"]
         },
       {
