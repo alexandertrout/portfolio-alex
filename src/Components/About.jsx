@@ -64,8 +64,12 @@ class About extends Component {
         </StyledTop>
         <OuterContainerAbout>
           <ExperienceDiv>
+            <ExperienceTitle>Slingshot Simulations</ExperienceTitle>
+            <ExperienceText class="about-text"> I am currently working as a part of the startup team at Slingshot Simulations to deliver an Internet of Simulation platform to allow easy use of simulations over the Internet at any scale. I focus on the delivery of front end web applications, developing using Vue, VueX, and Vuetify. I also frequently use Leaflet and D3.js to deliver mapping applications and custom interactive data visualiations.</ExperienceText>
+          </ExperienceDiv>
+          <ExperienceDiv>
           <ExperienceTitle>Northcoders</ExperienceTitle>
-          <ExperienceText class="about-text">Recently Graduated 12 week software developer bootcamp designed to provide me with the necessary skills to start work as a junior developer. Learning to program in JavaScript, the course covered test-driven development, pair programming, object-oriented programming, and both front and back end development. I am experienced dealing with asynchronous programming, using APIs and databases, Express, SQL, and React using styled components. In my final project I gained experience with react native for designing cross-platform native apps as well as implemeting the AWS services Cognito, Amplify, S3 Storage, DynamoDB, and using Lambdas with triggers. Graduated early March 2020 I am looking for positions starting immediately.</ExperienceText>
+          <ExperienceText class="about-text">Graduated the Northcoders 12 week software developer bootcamp designed to provide me with the necessary skills to start work as a junior developer. Learning to program in JavaScript, the course covered test-driven development, pair programming, object-oriented programming, and both front and back end development. I am experienced dealing with asynchronous programming, using APIs and databases, Express, SQL, and React using styled components. In my final project I gained experience with react native for designing cross-platform native apps as well as implemeting the AWS services Cognito, Amplify, S3 Storage, DynamoDB, and using Lambdas with triggers. Graduated March 2020.</ExperienceText>
           </ExperienceDiv>
           <ExperienceDiv>
           <ExperienceTitle>Manchester Metropolitan University</ExperienceTitle>
